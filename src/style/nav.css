@@ -1,0 +1,19 @@
+
+#navbar{
+    /* display: none; */
+    background-color:#E5F9F4;
+    color: #426259;
+    
+    box-shadow: none;
+}
+#itt{
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-left:10px;
+}
+#itt:hover{
+    color:#E5F9F4;
+    background-color: #426259;
+    border-radius: 16px;
+}

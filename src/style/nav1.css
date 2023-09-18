@@ -1,0 +1,18 @@
+/* *{
+    color: #426259;
+} */
+.bg-body-tertiary{
+    font-size: 20px;
+    font-weight: bold;
+    color: #426259;
+    background-color: #E5F9F4;
+}
+#nav{
+    color: #426259;
+    background-color: #E5F9F4;
+}
+#buu:hover{
+    /* display: none; */
+    color: #426259;
+    background-color: #E5F9F4;
+}
