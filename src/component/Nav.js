@@ -10,11 +10,8 @@ import ArticleIcon from '@mui/icons-material/Article';
 
 const navItems = ['Home', 'About', 'Contact'];
 
-function Nav(props) {
-  const { window } = props;
-  const count=0;
-  const container = window !== undefined ? () => window().document.body : undefined;
-
+function Nav() {
+  
   return (
     <div className='navi'>
       <CssBaseline />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useEffect}from 'react';
 import home from '../images/home.jpg';
 import '../style/home.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
@@ -8,6 +8,9 @@ import Nav from './Nav';
 import '../style/home.css'
 import { Link } from 'react-router-dom';
 const Home = () => {
+    useEffect(() => {
+        document.title = "CenZo's Articles";  
+      }, []);
     return (
         <div>
             <Nav
@@ -35,7 +38,7 @@ const Home = () => {
                     
                 </div>
                 <div className='image'>
-                <img src={home} alt="" width={'55%'} style={{float:'left',marginLeft:'28%',boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',boxShadow:'none'}}/>
+                <img src={home} alt="" width={'55%'} style={{float:'left',marginLeft:'28%',boxShadow:'none'}}/>
                 </div>
             </div>
             

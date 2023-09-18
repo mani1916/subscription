@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import{Row,Col} from 'react-bootstrap'
 import Nav1 from './Nav1';
 import DataContext from '../context/DataContext'
@@ -6,7 +6,9 @@ import DataContext from '../context/DataContext'
  import ArticleCard from './ArticleCard';
 const Myarticles = () => {
   const{myarticle,Setarticle}=useContext(DataContext)
-    console.log(myarticle)
+  useEffect(() => {
+    document.title = "Myarticles Page";  
+  }, []);
     return (
         <>
         <div>

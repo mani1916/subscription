@@ -7,7 +7,7 @@ import { useContext } from 'react';
 import DataContext from '../context/DataContext'
 const SendCard = () => {
 
-  const{myarticle,Setarticle,cards,setcards}=useContext(DataContext)
+  const{myarticle,cards}=useContext(DataContext)
     return (
         <>
         <Nav1 count={myarticle.length}/>
