@@ -10,10 +10,6 @@ const Articles = () => {
     return (
         <div>
             <SendCard />
-            <br/>
-            <br/>
-            <br/>          
-            <hr/>
         </div>
     );
 }

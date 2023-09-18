@@ -15,7 +15,6 @@
         const handleHeart=()=>{
             setHeart(heart=>!heart)
         }
-        
         const onToken=(token,author)=>{
             const newcard=[]
             const mycard=[...myarticle]

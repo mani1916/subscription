@@ -13,10 +13,8 @@ const SendCard = () => {
         <Nav1 count={myarticle.length}/>
         <Row xs={1} md={3} className="g-4" style={{marginLeft:'7%'}}>
           {cards.map((card) => (
-    <Col align='topx  ' key={card.author} style={{marginBottom:'3%'}}>
-      <ArticleCard
-        cards={cards}
-        setcards={setcards}
+        <Col align='topx  ' key={card.author} style={{marginBottom:'3%'}}>
+        <ArticleCard
         imagesrc={card.imagesrc}
         amount={card.amount}
         author={card.author}
@@ -25,8 +23,6 @@ const SendCard = () => {
         text={card.text}
         link={card.link}
         pay={card.pay}
-        myarticle={myarticle}
-        Setarticle={Setarticle}
       />
      </Col>
   ))}
