@@ -1,44 +1,39 @@
     import Button from 'react-bootstrap/Button';
+    import React, { useContext } from 'react';
     import Card from 'react-bootstrap/Card';
     import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
     import { faBoltLightning,faHeart, faNewspaper, faShareNodes } from '@fortawesome/free-solid-svg-icons';
-    import { useState } from 'react';
+    import { useState} from 'react';
     import StripeCheckout from 'react-stripe-checkout'
+    import DataContext from '../context/DataContext'
     import '../style/home.css'
-    function ArticleCard({imagesrc,amount,author,date,cardTitle,text,link,pay,setcards,cards,myarticle,Setarticle}) {
-        
+    function ArticleCard({imagesrc,amount,author,date,cardTitle,text,link,pay}) {
+        const{myarticle,Setarticle,cards,setcards}=useContext(DataContext)
         const[heart,setHeart]=useState(false)
         var pay1=pay
         const cardamount=parseInt(amount.slice(1))*100
         const handleHeart=()=>{
             setHeart(heart=>!heart)
         }
-        const rece=(author)=>{
-            // console.log(author)
-        }
-        const setPayment=(card,author)=>{
-            // console.log("ij",author)
-            if(card.author===author)
-            {   
-                myarticle.push(card)
-                card.pay=true
-                // pay1=true
-            }
-            return card;
-        }
+        
         const onToken=(token,author)=>{
             const newcard=[]
+            const mycard=[...myarticle]
                 for (let index = 0; index < cards.length; index++) {
-                    if(cards[index].author!=author)
+                    if(cards[index].author!==author)
                     {
                         newcard.push(cards[index])
-                    }      
+                    }else{
+                        mycard.push(cards[index])
+                    }
                 }
                 // console.log(newcards)
-                const newcards=cards.map((card)=>setPayment(card,author))
-                console.log(myarticle)
+                // const newcards=cards.map((card)=>setPayment(card,author))
                 setcards(newcard)
                 console.log(newcard)
+                Setarticle(mycard)
+
+                
         }
        
     return (

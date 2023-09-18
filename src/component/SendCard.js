@@ -3,7 +3,11 @@ import ArticleCard from './ArticleCard';
 import Nav1 from './Nav1';
 // import Col from 'react-bootstrap/esm/Col';
 import{Row,Col} from 'react-bootstrap'
-const SendCard = ({cards,setcards,myarticle,Setarticle}) => {
+import { useContext } from 'react';
+import DataContext from '../context/DataContext'
+const SendCard = () => {
+
+  const{myarticle,Setarticle,cards,setcards}=useContext(DataContext)
     return (
         <>
         <Nav1 count={myarticle.length}/>

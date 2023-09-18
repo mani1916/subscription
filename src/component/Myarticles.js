@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import{Row,Col} from 'react-bootstrap'
 import Nav1 from './Nav1';
+import DataContext from '../context/DataContext'
 
  import ArticleCard from './ArticleCard';
-const Myarticles = ({myarticle,Setarticle}) => {
+const Myarticles = () => {
+  const{myarticle,Setarticle}=useContext(DataContext)
+    console.log(myarticle)
     return (
         <>
         <div>
@@ -22,7 +25,7 @@ const Myarticles = ({myarticle,Setarticle}) => {
         cardTitle={myarticle.cardTitle}
         text={myarticle.text}
         link={myarticle.link}
-        pay={myarticle.pay}
+        pay={!myarticle.pay}
         myarticle={myarticle}
         Setarticle={Setarticle}
       />
@@ -35,10 +38,6 @@ const Myarticles = ({myarticle,Setarticle}) => {
     );
 }
 // Define default props outside of the functional component
-Myarticles.defaultProps = {
-  myarticle:[],
-  Setarticle:()=>{}
-};
 
 
 export default Myarticles;
