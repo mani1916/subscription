@@ -13,7 +13,8 @@ const Myarticles = () => {
         <>
         <div>
           
-            <Nav1 count={myarticle.length}/>
+            <Nav1 count={myarticle.length}
+                  />
         <Row xs={1} md={3} className="g-4" style={{marginLeft:'7%'}}>
           {myarticle.map((myarticle) => (
     <Col align='topx  ' key={myarticle.author} style={{marginBottom:'3%'}}>

@@ -6,6 +6,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import LocalMallIcon from '@mui/icons-material/LocalMall';
 import ArticleIcon from '@mui/icons-material/Article';
+import { useContext } from 'react';
+import DataContext from '../context/DataContext'
 // import Samples from './Samples';
 // import { faOpencart } from '@fortawesome/free-solid-svg-icons';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -13,6 +15,7 @@ import ArticleIcon from '@mui/icons-material/Article';
 import '../style/nav1.css'
 import { Link } from 'react-router-dom';
 function Nav1({count}) {
+  const{search,sear}=useContext(DataContext)
   return (
     <Navbar expand="lg" style={{backgroundColor:'#E5F9F4',marginBottom:'2.5%'}}>
       <Container fluid id='nav'>
@@ -22,10 +25,12 @@ function Nav1({count}) {
         <Form className="d-flex">
             <Form.Control
               type="search"
-              placeholder="Search Article"
+              placeholder="Search Author"
               className="me-2"
               aria-label="Search"
               style={{border:'2px solid #426259'}}
+              value={search}
+              onChange={(e)=>sear(e.target.value)}
             />
             <Button  style={{backgroundColor:'#426259',color:'#E5F9F4',border:'none'}} id='buu'>Search</Button>
           </Form>

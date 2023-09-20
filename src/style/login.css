@@ -1,7 +1,8 @@
 
 .Loginform{
     /* display: none; */
-    width: 50%;
+    width: 100%;
+    /* height: ; */
     display: flex;
     flex-direction: column;
     line-height: 3px;
@@ -27,7 +28,8 @@
 
 #loginbtn{
         /* display: none; */
-        margin-left: 20%;
+        
+        margin-left: 40%;
         border: none;
         background-color: #426259;
         border-radius: 5px;
@@ -35,5 +37,13 @@
         height: 33px;
         color: #E5F4F9;
         margin-bottom: 3%;
+    }
+    #link{
+        text-decoration: none;
+        color: #E5F4F9;
+        font-weight: bold;
+    }
+.form{
     /* border: 2px solid black; */
+
 }

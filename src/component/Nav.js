@@ -10,7 +10,7 @@ import ArticleIcon from '@mui/icons-material/Article';
 
 const navItems = ['Home', 'About', 'Contact'];
 function Nav() {
-  
+    
   return (
     <div className='navi'>
       <CssBaseline />
