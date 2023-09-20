@@ -64,8 +64,9 @@ export const DataProvider = ({ children }) => { // Destructure children
           pay:false
         }
       ])
+      const[display1,setDisplay]=useState(true)
       return (
-        <DataContext.Provider value={{myarticle,cards,setcards,Setarticle}}>
+        <DataContext.Provider value={{myarticle,cards,setcards,Setarticle,display1,setDisplay}}>
           {children} {/* Render the child components */}
         </DataContext.Provider>
       );

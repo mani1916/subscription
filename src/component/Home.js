@@ -22,13 +22,13 @@ const Home = () => {
             <br/>
             <div className='conter' style={{display:'flex',marginTop:'60px'}
             }>
-                <div className='description' style={{width:'80%',marginLeft:'5%',marginTop:'2%'}}>
+                <div className='description' style={{width:'80%',marginLeft:'5%',marginTop:'2%',color:'#426259'}}>
 
                     <h1>Welcome to <span>CenZo</span><br/><SchoolIcon style={{fontSize:'2.5rem',marginTop:'-7px',backgroundColor:'#E5F9F4',color:'#426259',padding:'3px',borderRadius:'5px'}}/> Crafting Excellence in Every Detail !</h1>
                     <h5>
                     "Stay informed about our latest journal releases, articles, and exclusive content. Subscribe to Cenzo and join our pursuit of knowledge"
                     </h5>
-                    <button ><Link to="/articles" id='y'> JOIN<FontAwesomeIcon icon={faRightToBracket} fade size="lg" id='mk'/></Link></button>
+                    <button ><Link to="/article" id='y'> JOIN<FontAwesomeIcon icon={faRightToBracket} fade size="lg" id='mk'/></Link></button>
                     <h2><i class="fa-solid fa-right-to-bracket fa-flip"></i></h2>
                     {/* <h1><FontAwesomeIcon icon="fa-solid fa-right-to-bracket"/>
                      */}

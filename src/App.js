@@ -4,6 +4,7 @@ import { Routes,Route } from 'react-router-dom';
 import Articles from './component/Articles';
 import '../src/index.css'
 import Myarticles from './component/Myarticles';
+import User from './component/User';
 import { DataProvider } from './context/DataContext';
 function App() {
  
@@ -16,6 +17,7 @@ function App() {
         <Route path='/' element={<Home />}/>
         <Route path='/articles' element={<Articles />}/>
         <Route path='/myarticles' element={<Myarticles/>}/>
+        <Route path='/user' element={<User/>}/>
 
         </Routes>
         </DataProvider>

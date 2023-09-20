@@ -9,7 +9,6 @@ import '../style/nav.css'
 import ArticleIcon from '@mui/icons-material/Article';
 
 const navItems = ['Home', 'About', 'Contact'];
-
 function Nav() {
   
   return (
