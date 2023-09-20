@@ -43,6 +43,10 @@
         color: #E5F4F9;
         font-weight: bold;
     }
+
+img{
+    margin-right: 7px;
+}
 .form{
     /* border: 2px solid black; */
 

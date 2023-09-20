@@ -13,6 +13,7 @@
     height: 75%;
     background-color: white;
     border-radius: 37px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    
 }
 #sticky{
