@@ -17,7 +17,8 @@ function App() {
         <Route path='/' element={<Home />}/>
         <Route path='/articles' element={<Articles />}/>
         <Route path='/myarticles' element={<Myarticles/>}/>
-        <Route path='/user' element={<User/>}/>r
+        <Route path='/user' element={<User/>}/>
+        <Route path='/user' element={<User/>}/>
 
         </Routes>
         </DataProvider>
