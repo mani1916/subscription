@@ -15,7 +15,8 @@
     width: 55%;
     border: none;
     height: 35px;
-    border-radius: 10px;
+      /* border-radius: 10px; */
+    /* border-bottom: 2px solid #426259; */
     border-bottom: 2px solid #426259;
     outline: none;
 
